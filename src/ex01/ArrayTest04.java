@@ -3,7 +3,7 @@ package ex01;
 public class ArrayTest04 {
 
 	public static void main(String[] args) {
-		// 전역변수를 쓰지 않고 input 출력하기, 데이터는 다른 방에 있는데 한번 만들어보기
+		// String, 배열처럼 데이터 큰 변수는 heap에 저장
 		// String [] bts = new String [] {} 은 아래와 같음 
 		String [] bts = {"RM", "제이홉", "정국", "지민", "진", "슈가", "뷔"
 		};
