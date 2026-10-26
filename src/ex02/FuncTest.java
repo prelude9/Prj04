@@ -33,7 +33,7 @@ public class FuncTest {
 		input();                         // 2군데 이상 같은 변수를 써야 한다 (num, name)
 		process();
 		output();                        // num, name 변수 사용 
-		System.out.println("end......");
+		System.out.println("");          // "end........"으로 하면 끝에 end....가 붙어서 나옴 
 
 	}
 	// input
@@ -66,15 +66,15 @@ public class FuncTest {
 		avg = (double) tot / 3.0;   // 실수 계산이므로 '3'이 아닌 '3.0'으로 해줘야함 
 		/* 반올림된 평균으로 하고 싶다면
 		ave = (int)(tot*100 + 0.5) / 100.0 
-		*/ 
+		*/
 		
 	}
 	// output
 	private static void output() {
 
 		System.out.println("번호 이름 총점 평균");  // 첫줄은 이렇게 입력하고
-		System.out.printf("%d   %s   %d   %10.3f",       // 둘째줄은 왼쪽의 형태로 출력 
-			              num, name, tot, avg);         // 평균은 소수이하 세자리로 출력, 세자리 이후는 자동반올림  
+		System.out.printf("%d   %s   %d   %10.3f",  // 둘째줄은 왼쪽의 형태로 출력 
+			              num, name, tot, avg);     // 평균은 소수이하 세자리로 출력, 세자리 이후는 자동반올림  
 		
 	}
 
