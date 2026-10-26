@@ -15,7 +15,7 @@ import java.util.Scanner;
  num name  tot  avg
  */
 public class FuncTest {
-	// 필드(공용) 전역 변수  :input에서도 쓰고 output에도 쓰고 등등 
+	// 필드(공용) 전역 변수  :input에서도 쓰고 output에도 쓰고 등등. 만약 input에서만 쓴다면 input에서만 만들고 없애는게 원칙 
 	// 입력 
 	private static int   num;
 	private static String name;
@@ -52,6 +52,11 @@ public class FuncTest {
 		eng              = Integer.parseInt(li[3].trim());
 		mat              = Integer.parseInt(li[4].trim());
 		
+		// 형변화 casting 
+		// 숫자 -> 문자열로 변환
+		// String.valuOf(35.6) -> "35.6"
+		// 35.6 + ""           -> "35.6"
+		
 	}
 	// process
 	private static void process() {
@@ -59,6 +64,10 @@ public class FuncTest {
 		tot = kor + eng + mat; 
 		// 형균
 		avg = (double) tot / 3.0;   // 실수 계산이므로 '3'이 아닌 '3.0'으로 해줘야함 
+		/* 반올림된 평균으로 하고 싶다면
+		ave = (int)(tot*100 + 0.5) / 100.0 
+		*/ 
+		
 	}
 	// output
 	private static void output() {
