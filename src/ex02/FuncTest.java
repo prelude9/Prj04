@@ -62,11 +62,13 @@ public class FuncTest {
 	private static void process() {
 		// 총점  : 총점의 변수를 확인 
 		tot = kor + eng + mat; 
-		// 형균
-		avg = (double) tot / 3.0;   // 실수 계산이므로 '3'이 아닌 '3.0'으로 해줘야함 
 		/* 반올림된 평균으로 하고 싶다면
 		ave = (int)(tot*100 + 0.5) / 100.0 
 		*/
+		avg = (int)(tot*100 + 0.5) / 100.0 ; 
+		
+		// avg = (double) tot / 3.0;   > 실수 계산이므로 '3'이 아닌 '3.0'으로 해줘야함 
+	
 		
 	}
 	// output
